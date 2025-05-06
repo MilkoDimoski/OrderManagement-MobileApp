@@ -1,0 +1,16 @@
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\bin\Debug\net8.0\PracticeApp.Repository.deps.json
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\bin\Debug\net8.0\PracticeApp.Repository.dll
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\bin\Debug\net8.0\PracticeApp.Repository.pdb
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\bin\Debug\net8.0\PracticeApp.Domain.dll
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\bin\Debug\net8.0\PracticeApp.Domain.pdb
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.csproj.AssemblyReference.cache
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.AssemblyInfoInputs.cache
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.AssemblyInfo.cs
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.csproj.CoreCompileInputs.cache
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\Practice.72925C71.Up2Date
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.dll
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\refint\PracticeApp.Repository.dll
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.pdb
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\ref\PracticeApp.Repository.dll
+C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Repository\obj\Debug\net8.0\PracticeApp.Repository.sourcelink.json
