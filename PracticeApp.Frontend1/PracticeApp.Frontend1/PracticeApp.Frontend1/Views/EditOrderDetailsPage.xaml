@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeApp.Frontend1.Views.EditOrderDetailsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Enter Order Number" 
+                   Text="{Binding OrderNumber, Mode=TwoWay}"
+                   Keyboard="Numeric"/>
+            <Button Text="Submit" 
+                    Command="{Binding LoadDetailsCommand}"/>
+
+            <Frame IsVisible="{Binding HasCurrentDetail}">
+                <StackLayout Spacing="10">
+                    <Label Text="SKU" FontAttributes="Bold"/>
+                    <Entry Text="{Binding CurrentDetail.Sku, Mode=TwoWay}"/>
+
+                    <Label Text="Price" FontAttributes="Bold"/>
+                    <Entry Text="{Binding CurrentDetail.Price, Mode=TwoWay}"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="Quantity" FontAttributes="Bold"/>
+                    <Entry Text="{Binding CurrentDetail.Quantity, Mode=TwoWay}"
+                           Keyboard="Numeric"/>
+
+                    <Button Text="Update" 
+                            Command="{Binding SaveDetailCommand}"/>
+                </StackLayout>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Button Text="Pevious"
+                        Command="{Binding PreviousCommand}"
+                        IsEnabled="{Binding CanPrevious}"/>
+
+                <Label Text="{Binding PositionText}" VerticalOptions="Center"/>
+
+                <Button Text="Next"
+                        Command="{Binding NextCommand}"
+                        IsEnabled="{Binding CanNext}"/>
+            </StackLayout>
+
+            <StackLayout Padding="20" Spacing="15">
+                <Button Text="Back To Menu"
+                        Command="{Binding BackToMenuCommand}"
+                        BackgroundColor="LightGray"
+                        TextColor="Black"
+                        Margin="0,20,0,0"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

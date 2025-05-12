@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeApp.Frontend1.Views.MenuPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+
+            <StackLayout Padding="10" Spacing="10">
+                <Label Text="Orders memu" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="See the details for your order" FontSize="20" TextColor="DarkBlue"/>
+                <Button Text="View Details" Command="{Binding ViewOrderInfo}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Padding="10" Spacing="10">
+                <Label Text="Edit Order" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="Modify an existing order info" FontSize="20" TextColor="DarkBlue"/>
+                <Button Text="View Details" Command="{Binding EditOrderDetails}" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </StackLayout>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -18,7 +18,7 @@ namespace PracticeApp.Services
         public async Task<int> AddUser(User user)
         {
             var userDto=_mapper.Map<UserDto>(user);
-            var existingUser= await _userRepository.GetUsersById(user.UserId);
+            var existingUser= await _userRepository.GetUserByUsername(user.Username);
             if (existingUser != null)
             {
                 throw new Exception("User already exists");
@@ -45,9 +45,18 @@ namespace PracticeApp.Services
 
         public async Task<User> GetUserById(int id)
         {
-            var userDtos=await _userRepository.GetUsersById(id);
-            var users=_mapper.Map<User>(userDtos);
-            return users;
+            var userDto = await _userRepository.GetUsersById(id);
+            var user = _mapper.Map<User>(userDto); // Corrected variable name to match the type
+            return user;
+        }
+
+        public async Task<User> Login(string username, string password)
+        {
+            var userDto = await _userRepository.GetUserByUsername(username);
+            if (userDto == null || userDto.Password != password) return null;
+
+            var user = _mapper.Map<User>(userDto);
+            return user;
         }
 
         public async Task<int> UpdateUser(User user)
@@ -61,5 +70,6 @@ namespace PracticeApp.Services
             }
             return await _userRepository.UpdateUser(userDto);
         }
+
     }
 }

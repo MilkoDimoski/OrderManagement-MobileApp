@@ -11,3 +11,16 @@ C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0
 C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.pdb
 C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\ref\PracticeApp.Domain.dll
 C:\Users\PC\MDS Soft\PracticeApp\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.sourcelink.json
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\bin\Debug\net8.0\PracticeApp.Domain.deps.json
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\bin\Debug\net8.0\PracticeApp.Domain.dll
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\bin\Debug\net8.0\PracticeApp.Domain.pdb
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.csproj.AssemblyReference.cache
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.AssemblyInfoInputs.cache
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.AssemblyInfo.cs
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.sourcelink.json
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.dll
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\refint\PracticeApp.Domain.dll
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\PracticeApp.Domain.pdb
+C:\Users\PC\MDS Soft\PracticeApp1\PracticeApp\PracticeApp.Domain\obj\Debug\net8.0\ref\PracticeApp.Domain.dll

@@ -35,6 +35,17 @@ namespace PracticeApp.API.Controllers
             var orders = await _orderService.GetOrdersByUser(userId);
             return Ok(orders);
         }
+        [HttpGet("number/{orderNumber}")]
+        public async Task<IActionResult> GetOrderByOrderNumber(int orderNumber)
+        {
+            var order = await _orderService.GetOrderByOrderNumber(orderNumber);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return Ok(order);
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddOrder(Order order)
         {

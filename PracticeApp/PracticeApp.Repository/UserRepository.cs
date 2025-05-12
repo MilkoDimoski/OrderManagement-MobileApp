@@ -44,6 +44,17 @@ namespace PracticeApp.Repository
             }
         }
 
+        public async Task<UserDto> GetUserByUsername(string username)
+        {
+            using(var connection =new SqlConnection(_connectionString))
+            {
+                var sql = @"SELECT * FROM Users
+                        WHERE Username=@Username";
+                var user = await connection.QueryFirstOrDefaultAsync<UserDto>(sql, new { Username = username });
+                return user;
+            }
+        }
+
         public async Task<UserDto> GetUsersById(int id)
         {
             using(var connection = new SqlConnection(_connectionString))

@@ -29,15 +29,25 @@ namespace PracticeApp.API.Controllers
             }
             return Ok(user);
         }
-        [HttpPost]
+        [HttpPost("register")]
         public async Task<IActionResult> AddUser(User user)
         {
-            if (user == null || user.UserId < 1)
+            if (user == null || string.IsNullOrWhiteSpace(user.Username)  || string.IsNullOrWhiteSpace(user.Password))
             {
                 return BadRequest();
             }
             var userId = await _userService.AddUser(user);
             return CreatedAtAction(nameof(GetUserById), new { id = userId }, user);
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> LoginUser(User user)
+        {
+            var success = await _userService.Login(user.Username, user.Password);
+            if (success==null)
+            {
+                return Unauthorized("Invalida username or password");
+            }
+            return Ok(success);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser( User user)

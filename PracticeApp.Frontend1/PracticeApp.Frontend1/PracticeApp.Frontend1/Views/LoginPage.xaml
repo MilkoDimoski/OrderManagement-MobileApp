@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeApp.Frontend1.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login" TextColor="Black" FontSize="32" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,20,0,0"/>
+            <Entry x:Name="UsernameEntry" VerticalOptions="Center" Placeholder="Username" Text="{Binding Username,Mode=TwoWay}"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True"  Text="{Binding Password,Mode=TwoWay}"/>
+            <Button Text="Login"  Command="{Binding LoginCommand}" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

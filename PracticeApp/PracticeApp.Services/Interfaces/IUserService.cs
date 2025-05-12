@@ -9,5 +9,6 @@ namespace PracticeApp.Services.Interfaces
         Task<int> AddUser(User user);
         Task<int> UpdateUser(User user);
         Task<int> DeleteUser(int id);
+        Task<User> Login(String username, string password);
     }
 }

@@ -9,5 +9,6 @@ namespace PracticeApp.Repository.Interfaces
         Task<int> AddUser(UserDto user);    
         Task<int> UpdateUser(UserDto user);
         Task<int> DeleteUser(int id);
+        Task<UserDto> GetUserByUsername(string username);
     }
 }

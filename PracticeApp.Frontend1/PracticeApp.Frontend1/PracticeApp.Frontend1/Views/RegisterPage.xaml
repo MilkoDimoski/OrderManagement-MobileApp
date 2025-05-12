@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeApp.Frontend1.Views.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Register" TextColor="Black" FontSize="32" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,20,0,0"/>
+            <Entry x:Name="UsernameEntry" VerticalOptions="Center" Placeholder="Username" Text="{Binding Username,Mode=TwoWay}"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True"  Text="{Binding Password,Mode=TwoWay}"/>
+            <Entry  IsPassword="True" Placeholder="Confirm Password" Text="{Binding ConfirmPassword,Mode=TwoWay}"/>
+            <Button Text="Register" Command="{Binding RegisterCommand}" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,20,0,0"/>
+
+            
+            <Label HorizontalOptions="Center" VerticalOptions="Center" TextColor="Blue">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginTapped"/>
+                </Label.GestureRecognizers>
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Already have an account? " />
+                        <Span Text="Login" TextColor="Blue" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

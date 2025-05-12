@@ -175,6 +175,22 @@
   },
   {
     "ContainingType": "PracticeApp.API.Controllers.OrderController",
+    "Method": "GetOrderByOrderNumber",
+    "RelativePath": "api/Order/number/{orderNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PracticeApp.API.Controllers.OrderController",
     "Method": "GetOrdersByUserId",
     "RelativePath": "api/Order/user/{userId}",
     "HttpMethod": "GET",
@@ -197,22 +213,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PracticeApp.API.Controllers.UserController",
-    "Method": "AddUser",
-    "RelativePath": "api/User",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "PracticeApp.Services.Models.User",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   },
   {
@@ -263,6 +263,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PracticeApp.API.Controllers.UserController",
+    "Method": "LoginUser",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "PracticeApp.Services.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PracticeApp.API.Controllers.UserController",
+    "Method": "AddUser",
+    "RelativePath": "api/User/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "PracticeApp.Services.Models.User",
         "IsRequired": true
       }
     ],
