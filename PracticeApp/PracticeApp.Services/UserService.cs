@@ -46,7 +46,7 @@ namespace PracticeApp.Services
         public async Task<User> GetUserById(int id)
         {
             var userDto = await _userRepository.GetUsersById(id);
-            var user = _mapper.Map<User>(userDto); // Corrected variable name to match the type
+            var user = _mapper.Map<User>(userDto);
             return user;
         }
 
